@@ -5,31 +5,41 @@ class Stack:
         self.size = size
 
     def is_empty(self):
-"""code to check whether the stack is empty or not"""
+"""
+code to check whether the stack is empty or not
+"""
         if len(self.items)==0:
             return True
         else:
             return False
             
     def is_full(self):
-"""code to check whether the stack is full or not"""
+"""
+code to check whether the stack is full or not
+"""
         if len(self.items)==self.size:
             return True
         else:
             return False
 
     def push(self, data):
-"""code to check whether the stack is full or not and append the data into the stack"""
+"""
+code to check whether the stack is full or not and append the data into the stack
+"""
         if not self.is_full():
             self.items.append(data)
 
     def pop(self):
-"""code to check whether the stack is empty or not and pop the data out of the stack"""
+"""
+code to check whether the stack is empty or not and pop the data out of the stack
+"""
         if not self.is_empty():
             self.items.pop()
 
     def status(self):
-"""code to display the elements from the stack onto the screen"""
+"""
+code to display the elements from the stack onto the screen
+"""
         for element in self.items:
             print(element)
 
